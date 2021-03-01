@@ -1,0 +1,823 @@
+!SESSION 2019-08-28 22:02:28.457 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=12.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2019-08-28 22:02:29.948
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2019-08-28 22:02:29.950
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+                     org.apache.xmlrpc [57]
+                       Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2019-08-28 22:02:29.951
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.egit.core 1 0 2019-08-28 22:02:43.762
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2019-08-28 22:02:45.446
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2019-08-28 22:02:45.446
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-08-28 22:02:53.171
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yubin Wang'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-08-28 22:05:24.213 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=12.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2019-08-28 22:05:25.706
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2019-08-28 22:05:25.708
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+                     org.apache.xmlrpc [57]
+                       Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2019-08-28 22:05:25.710
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.egit.core 1 0 2019-08-28 22:05:35.452
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2019-08-28 22:05:36.730
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2019-08-28 22:05:36.731
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-08-28 22:05:43.283
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yubin Wang'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-08-29 16:54:07.786 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=12.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2019-08-29 16:54:09.163
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2019-08-29 16:54:09.165
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2019-08-29 16:54:09.166
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.egit.core 1 0 2019-08-29 16:54:12.109
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2019-08-29 16:54:14.646
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2019-08-29 16:54:14.646
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-08-29 16:54:20.872
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yubin Wang'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-08-29 17:21:59.243 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=12.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2019-08-29 17:22:00.629
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2019-08-29 17:22:00.633
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+                     org.apache.xmlrpc [57]
+                       Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2019-08-29 17:22:00.635
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.egit.core 1 0 2019-08-29 17:22:04.004
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2019-08-29 17:22:06.641
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2019-08-29 17:22:06.642
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-08-29 17:22:12.120
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yubin Wang'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-08-29 21:35:25.089 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=12.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2019-08-29 21:35:26.514
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2019-08-29 21:35:26.516
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2019-08-29 21:35:26.518
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.egit.core 1 0 2019-08-29 21:35:30.394
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2019-08-29 21:35:33.147
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2019-08-29 21:35:33.147
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-08-29 21:35:39.528
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yubin Wang'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-08-30 00:43:31.801 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=12.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2019-08-30 00:43:33.292
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2019-08-30 00:43:33.295
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+                     org.apache.xmlrpc [57]
+                       Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2019-08-30 00:43:33.296
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.egit.core 1 0 2019-08-30 00:43:36.696
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2019-08-30 00:43:39.443
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2019-08-30 00:43:39.443
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-08-30 00:43:45.296
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yubin Wang'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-08-30 13:05:38.527 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=12.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2019-08-30 13:05:40.058
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2019-08-30 13:05:40.063
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+                     org.apache.xmlrpc [57]
+                       Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2019-08-30 13:05:40.067
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.egit.core 1 0 2019-08-30 13:05:57.239
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2019-08-30 13:05:59.871
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2019-08-30 13:05:59.871
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-08-30 13:06:07.061
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yubin Wang'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-08-30 13:11:52.271
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.swt.ole.win32.OleAutomation.<init>(OleAutomation.java:128)
+	at org.eclipse.ui.internal.editorsupport.win32.OleEditor.handleWord(OleEditor.java:333)
+	at org.eclipse.ui.internal.editorsupport.win32.OleEditor.oleActivate(OleEditor.java:554)
+	at org.eclipse.ui.internal.editorsupport.win32.OleEditor.createPartControl(OleEditor.java:187)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:156)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:102)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:367)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:333)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1295)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.lambda$0(LazyStackRenderer.java:75)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4580)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:177)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:652)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:616)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:791)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:404)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1240)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3317)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3216)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3213)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3177)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3167)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:570)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:525)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:363)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:170)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:287)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:252)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:382)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$4.open(PackageExplorerPart.java:554)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:49)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:853)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:176)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:850)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1165)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:277)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:272)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:312)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+!SESSION 2019-08-30 13:52:04.610 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=12.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2019-08-30 13:52:06.014
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [270]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [287]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [57]
+                Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2019-08-30 13:52:06.018
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [270]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [287]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+                     org.apache.xmlrpc [57]
+                       Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2019-08-30 13:52:06.019
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [287]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [57]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.egit.core 1 0 2019-08-30 13:52:09.154
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2019-08-30 13:52:10.466
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2019-08-30 13:52:10.466
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-08-30 13:52:16.665
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yubin Wang'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
